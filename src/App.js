@@ -6,16 +6,22 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h2>
+          Welcome on my homepage!
+        </h2>
+        <h4>
+          This website is under construction
+        </h4>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Below is my temporary homepage:
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://mcesarczyk.github.io/personal-homepage/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          <h1>Michał Cesarczyk @ gh-pages</h1>
         </a>
       </header>
     </div>
