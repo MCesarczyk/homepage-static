@@ -7,7 +7,7 @@
 }
 
 .header__titleImage {
-  height: 20vmin;
+  height: 20vw;
 }
 
 .header__title {
@@ -15,5 +15,5 @@
   margin-left: 1rem;
   align-self: flex-end;
   font-family: "Permanent Marker", cursive;
-  font-size: 10vmin;
+  font-size: 10vw;
 }
