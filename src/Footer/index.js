@@ -1,4 +1,5 @@
 import { MAIL_ADRESS } from "../assets/adresses";
+import { thumbnails } from "../assets/thumbnails";
 import "./style.css";
 
 const Footer = () => (
@@ -11,9 +12,17 @@ const Footer = () => (
                 {MAIL_ADRESS}
             </a>
         </h2>
-        <p className="footer__paragraph">
-            I'm open to new challenging tasks, so when you need website or Single Page Application to launch, feel free to talk to me.
-        </p>
+        <div className="footer__thumbnailWrapper">
+            {thumbnails.map(({ id, testId, icon, url }) => (
+                <div className="footer__thumbnail" key={id}>
+                    <a data-testid={testId} href={url} target="_blank" rel="noopener noreferrer" >
+                        <div className="footer__icon">
+                            {icon}
+                        </div>
+                    </a>
+                </div>
+            ))}
+        </div>
     </div>
 );
 

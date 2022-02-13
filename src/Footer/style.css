@@ -1,7 +1,7 @@
 .footer__wrapper {
-  max-width: 32rem;
   margin: 0 auto;
   padding: 4rem 0;
+  text-align: center;
 }
 
 .footer__header {
@@ -17,10 +17,11 @@
 
 .footer__link {
   display: block;
+  font-size: 4vw;
   font-weight: 900;
   color: #fff;
-  margin: 1.5rem 0 1.5rem 0;
-  transition: 1s;
+  margin: 1rem 0;
+  transition: 0.5s;
 }
 
 .footer__link:hover {
@@ -33,7 +34,28 @@
   transform: unset;
 }
 
-.footer__paragraph {
-  margin-bottom: 3rem;
-  text-align: left;
+.footer__thumbnailWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__thumbnail {
+  width: 3rem;
+  min-width: 32px;
+  margin: 0.5rem 2rem;
+  transition: 0.5s;
+}
+
+.footer__thumbnail:hover {
+  color: #2188ff;
+  transform: scale(110%);
+}
+
+.footer__icon {
+  color: #fff;
+  height: 4rem;
+}
+
+.footer__icon:hover {
+  color: #2188FF;
 }
