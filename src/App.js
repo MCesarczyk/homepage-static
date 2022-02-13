@@ -1,17 +1,25 @@
-import logo from './logo.svg';
+import portrait from './portrait.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>
-          Welcome on my homepage!
-        </h2>
-        <h4>
+      <header className="App__header">
+        <div className='App__titleWrapper'>
+          <img 
+          className='App__titleImage'
+          src={portrait} alt="portrait"
+          />
+          <h1 className='App__title'>
+            Cesarczyk.dev
+            </h1>
+        </div>
+        <p>
+          Welcome to my homepage!
+        </p>
+        <p>
           This website is under construction
-        </h4>
+        </p>
         <p>
           Below is my temporary homepage:
         </p>
@@ -24,7 +32,7 @@ function App() {
           <h1>MCesarczyk @ gh-pages</h1>
         </a>
       </header>
-    </div>
+    </div >
   );
 }
 
