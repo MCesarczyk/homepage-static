@@ -1,0 +1,39 @@
+.footer__wrapper {
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.footer__header {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.footer__caption {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer__link {
+  display: block;
+  font-weight: 900;
+  color: #fff;
+  margin: 1.5rem 0 1.5rem 0;
+  transition: 1s;
+}
+
+.footer__link:hover {
+  color: #2188ff;
+  transform: scale(1.01);
+}
+
+.footer__link:active {
+  color: unset;
+  transform: unset;
+}
+
+.footer__paragraph {
+  margin-bottom: 3rem;
+  text-align: left;
+}
