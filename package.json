@@ -1,7 +1,11 @@
 {
   "name": "homepage-static",
+  "author": "Michał Cesarczyk",
+  "email": "michal.cesarczyk@gmail.com",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mcesarczyk.github.io/homepage-static",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
