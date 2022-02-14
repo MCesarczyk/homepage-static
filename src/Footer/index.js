@@ -3,7 +3,7 @@ import { thumbnails } from "../assets/thumbnails";
 import "./style.css";
 
 const Footer = () => (
-    <div className="footer__wrapper">
+    <footer className="footer">
         <h2 className="footer__header">
             <p className="footer__caption">
                 CONTACT:
@@ -23,7 +23,7 @@ const Footer = () => (
                 </div>
             ))}
         </div>
-    </div>
+    </footer>
 );
 
 export default Footer;
