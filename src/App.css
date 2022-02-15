@@ -7,3 +7,19 @@
   color: crimson;
   font-size: 1rem;
 }
+
+.main {
+  animation: fade-in 2s ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
