@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Header />
 
-      <main>
+      <main className='main'>
         <h2>
           Welcome to my homepage!
         </h2>
