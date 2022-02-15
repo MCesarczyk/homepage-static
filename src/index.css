@@ -1,6 +1,8 @@
 html {
   box-sizing: border-box;
   font-size: 28px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1400px) {
@@ -76,4 +78,5 @@ button {
 
 a {
   text-decoration: none;
+  color: unset;
 }

@@ -1,11 +1,17 @@
 .header {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  flex-wrap: wrap;  
   animation: fade-in 2s ease-in-out;
   animation-fill-mode: both;
+}
+
+@media(max-width: 576px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @keyframes fade-in {
@@ -18,12 +24,14 @@
 }
 
 .header__titleImage {
-  height: 7rem;
+  height: 8rem;
+  transition: 0.5s ease-out;
 }
 
 .header__title {
   margin: 0 1rem;
   align-self: flex-end;
   font-family: "Permanent Marker", cursive;
-  font-size: 3.5rem;
+  font-size: 4rem;
+  transition: 0.5s ease-out;
 }
