@@ -3,17 +3,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
 }
 
 .header__titleImage {
-  height: 20vw;
+  height: 7rem;
 }
 
 .header__title {
-  margin: 0;
-  margin-left: 1rem;
+  margin: 0 1rem;
   align-self: flex-end;
   font-family: "Permanent Marker", cursive;
-  font-size: 10vw;
+  font-size: 3.5rem;
 }

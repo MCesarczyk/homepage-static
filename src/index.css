@@ -1,5 +1,42 @@
 html {
   box-sizing: border-box;
+  font-size: 28px;
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
 }
 
 *, ::after, ::before {
@@ -15,25 +52,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #282c34;
   color: white;
-  font-size: 20px;
-}
-
-@media (max-width: 992px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 576px) {
-  body {
-    font-size: 14px;
-  }
 }
 
 html,
