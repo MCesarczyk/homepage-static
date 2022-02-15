@@ -1,11 +1,13 @@
 import './App.css';
+import Footer from './Footer';
 import Header from './Header';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <main>
+
+      <main className='main'>
         <h2>
           Welcome to my homepage!
         </h2>
@@ -24,6 +26,8 @@ function App() {
           <h2>MCesarczyk @ gh-pages</h2>
         </a>
       </main>
+
+      <Footer />
     </div >
   );
 }

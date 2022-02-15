@@ -1,0 +1,76 @@
+.footer {
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center;
+  animation: fade-in 2s ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.footer__header {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.footer__caption {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  color: #fff;
+}
+
+.footer__link {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #fff;
+  margin: 0.5rem 0 1rem 0;
+  transition: 0.5s ease-out;
+}
+
+.footer__link:hover {
+  color: #2188ff;
+  transform: scale(1.01);
+}
+
+.footer__link:active {
+  color: unset;
+  transform: unset;
+}
+
+.footer__thumbnailWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__thumbnail {
+  width: 2rem;
+  height: 2rem;
+  min-width: 32px;
+  margin: 0 2rem;
+  transition: 0.5s ease-out;
+}
+
+.footer__thumbnail:hover {
+  color: #2188ff;
+  transform: scale(110%);
+}
+
+.footer__icon {
+  color: #fff;
+  height: 4rem;
+}
+
+.footer__icon:hover {
+  color: #2188FF;
+}

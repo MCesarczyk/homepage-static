@@ -1,19 +1,37 @@
 .header {
-  padding: 4rem 0;
+  padding: 2rem 1rem;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  animation: fade-in 2s ease-in-out;
+  animation-fill-mode: both;
+}
+
+@media(max-width: 576px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .header__titleImage {
-  height: 20vmin;
+  height: 8rem;
+  transition: 0.5s ease-out;
 }
 
 .header__title {
-  margin: 0;
-  margin-left: 1rem;
+  margin: 0 1rem;
   align-self: flex-end;
   font-family: "Permanent Marker", cursive;
-  font-size: 10vmin;
+  font-size: 4rem;
+  transition: 0.5s ease-out;
 }
