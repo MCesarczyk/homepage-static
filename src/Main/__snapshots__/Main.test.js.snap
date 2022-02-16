@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buttons are rendering properly 1`] = `
+<button
+  class="
+                main__button
+                main__button--first
+                false
+              "
+>
+  skills
+</button>
+`;
+
+exports[`buttons are rendering properly 2`] = `
+<button
+  class="
+                main__button
+                false
+                false
+              "
+>
+  portfolio
+</button>
+`;
+
+exports[`buttons are rendering properly 3`] = `
+<button
+  class="
+                main__button
+                false
+                main__button--last
+              "
+>
+  goals
+</button>
+`;
