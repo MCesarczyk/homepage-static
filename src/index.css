@@ -80,3 +80,12 @@ a {
   text-decoration: none;
   color: unset;
 }
+
+a:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
