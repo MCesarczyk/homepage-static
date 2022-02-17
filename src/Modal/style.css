@@ -1,0 +1,36 @@
+.modal {
+  margin: 0;
+  padding: 0;
+  /* display: none; */
+}
+
+.modal__mask {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal__wrapper {
+  z-index: 1020;
+  position: fixed;
+  inset: 0;
+  overflow: auto;
+  outline: none;
+}
+
+.modal__body {
+  z-index: 1020;
+  padding: 2rem;
+  color: #000000d9;
+  background-color: #fafafa;
+  position: relative;
+  top: 100px;
+  width: 100%;
+  max-width: calc(100vw - 6rem);
+  margin: 0 auto;
+  border-radius: 2px;
+  pointer-events: auto;
+  word-wrap: break-word;
+}
