@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Main from './Main';
-import Modal from './Modal';
 import './App.css';
 
 function App() {
@@ -23,8 +22,6 @@ function App() {
       <Header />
 
       <Main openModal={showModal} />
-
-      <Modal />
 
       <Footer />
     </div >
