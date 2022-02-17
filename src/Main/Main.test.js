@@ -38,3 +38,13 @@ test('first and last buttons have additional styles', () => {
   expect(first).toHaveStyle("css:", "main__button--first");
   expect(last).toHaveStyle("css:", "main__button--last");
 });
+
+it('triggers opening modal with param', () => {
+  const openModal = jest.fn();
+  render(<Main />);
+  const buttons = screen.getAllByRole('button');
+
+  buttons.forEach(button => {
+    button.dispatchEvent(new MouseEvent("click", {bubbles: openModal(button.innerHTML)}))
+  });
+});
