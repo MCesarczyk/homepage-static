@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Main from './Main';
@@ -9,16 +9,12 @@ function App() {
   const [content, setContent] = useState(undefined);
   const [open, setOpen] = useState(false);
 
-  const showModal = (content) => {
-    setContent(content);
+  const showModal = (section) => {
+    setContent(section);
     setOpen(true);
   };
 
   const onCancel = () => setOpen(false);
-
-  useEffect(() => {
-    console.log(`I'll show "${open ? content : 'no'}" modal`);
-  }, [open, content])
 
   return (
     <div className="App">
@@ -28,6 +24,7 @@ function App() {
 
       <Modal
         visible={open}
+        content={content}
         onCancel={onCancel}
       />
 

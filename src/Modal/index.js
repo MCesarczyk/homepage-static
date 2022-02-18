@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import ModalCloseButton from "./CloseButton";
 import "./style.css";
 
-const Modal = ({ visible, onCancel }) => {
+const Modal = ({ visible, onCancel, content }) => {
   const ref = useRef();
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Modal = ({ visible, onCancel }) => {
         <div data-testid="modal" ref={ref} className="modal__body" role="document">
           <ModalCloseButton onClick={onCancel} />
 
-          <h3>Lorem ipsum</h3>
+          <h3>{content?.title}</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni nisi quia laudantium eveniet recusandae dolore? Reiciendis dolore rerum, porro corporis facere sapiente, odit consectetur quia quisquam aspernatur corrupti nihil.
           </p>
