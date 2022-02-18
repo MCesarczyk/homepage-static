@@ -14,6 +14,8 @@ function App() {
     setOpen(true);
   };
 
+  const onCancel = () => setOpen(false);
+
   useEffect(() => {
     console.log(`I'll show "${open ? content : 'no'}" modal`);
   }, [open, content])
@@ -24,7 +26,10 @@ function App() {
 
       <Main openModal={showModal} />
 
-      <Modal />
+      <Modal
+        visible={open}
+        onCancel={onCancel}
+      />
 
       <Footer />
     </div >

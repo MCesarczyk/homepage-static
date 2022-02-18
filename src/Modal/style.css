@@ -1,7 +1,6 @@
 .modal {
   margin: 0;
   padding: 0;
-  /* display: none; */
 }
 
 .modal__mask {
@@ -28,9 +27,18 @@
   position: relative;
   top: 100px;
   width: 100%;
-  max-width: calc(100vw - 6rem);
+  max-width: calc(100vw - 2rem);
   margin: 0 auto;
   border-radius: 2px;
   pointer-events: auto;
   word-wrap: break-word;
+  animation: emerge 1s ease-in-out;
+}
+
+@keyframes emerge {
+  from {
+    transform: scale(0);
+  } to {
+    transform: scale(1);
+  }
 }

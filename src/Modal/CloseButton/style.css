@@ -1,0 +1,44 @@
+.button__body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  padding: 0;
+  color: #00000073;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.button__body:hover {
+  box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.2);
+}
+
+.button__body:active {
+  box-shadow: inset 0em 0em 0em 10em rgba(0, 0, 0, 0.3);
+}
+
+.button__icon {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 56px;
+  text-align: center;
+}
+
+.icon__wrapper {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+}
