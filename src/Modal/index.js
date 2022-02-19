@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import ModalCloseButton from "./CloseButton";
+import List from "./List";
 import "./style.css";
 
 const Modal = ({ visible, onCancel, content }) => {
@@ -26,16 +27,12 @@ const Modal = ({ visible, onCancel, content }) => {
         <div data-testid="modal" ref={ref} className="modal__body" role="document">
           <ModalCloseButton onClick={onCancel} />
 
-          <h3>{content?.title}</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni nisi quia laudantium eveniet recusandae dolore? Reiciendis dolore rerum, porro corporis facere sapiente, odit consectetur quia quisquam aspernatur corrupti nihil.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni nisi quia laudantium eveniet recusandae dolore? Reiciendis dolore rerum, porro corporis facere sapiente, odit consectetur quia quisquam aspernatur corrupti nihil.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magni nisi quia laudantium eveniet recusandae dolore? Reiciendis dolore rerum, porro corporis facere sapiente, odit consectetur quia quisquam aspernatur corrupti nihil.
-          </p>
+          <h3 className="modal__header">
+            {content?.title}
+          </h3>
+          {content?.items && <List
+            items={content?.items}
+          />}
         </div>
       </div>
     </div>

@@ -19,16 +19,21 @@
   outline: none;
 }
 
+.modal__header {
+  margin-bottom: 2rem;
+}
+
 .modal__body {
   z-index: 1020;
   padding: 2rem;
   color: #000000d9;
   background-color: #fafafa;
   position: relative;
-  top: 100px;
-  width: 100%;
-  max-width: calc(100vw - 4rem);
+  top: 2rem;
+  width: 720px;
+  max-width: calc(100vw - 2rem);
   margin: 0 auto;
+  margin-bottom: 4rem;
   border-radius: 2px;
   pointer-events: auto;
   word-wrap: break-word;
