@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import ModalCloseButton from "./CloseButton";
+import Gallery from "./Gallery";
 import List from "./List";
 import "./style.css";
 
@@ -35,7 +36,7 @@ const Modal = ({ type, visible, onCancel, content }) => {
             items={content?.items}
           />}
 
-          {type === "gallery" && "GALLERY"}
+          {type === "gallery" && <Gallery />}
         </div>
       </div>
     </div>
