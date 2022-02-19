@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import Main from '.';
-import { sections } from '../assets/content';
+import { sections } from '../assets/sections';
 
 test('renders sections names', () => {
   render(<Main />);
 
   sections.forEach(section => {
-    const title = screen.getByText(section);
+    const title = screen.getByText(section.name);
     expect(title).toBeInTheDocument();
   });
 });

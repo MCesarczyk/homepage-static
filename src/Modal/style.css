@@ -1,0 +1,49 @@
+.modal {
+  margin: 0;
+  padding: 0;
+}
+
+.modal__mask {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal__wrapper {
+  z-index: 1020;
+  position: fixed;
+  inset: 0;
+  overflow: auto;
+  outline: none;
+}
+
+.modal__header {
+  margin-bottom: 2rem;
+}
+
+.modal__body {
+  z-index: 1020;
+  padding: 2rem;
+  color: #000000d9;
+  background-color: #fafafa;
+  position: relative;
+  top: 2rem;
+  width: 720px;
+  max-width: calc(100vw - 2rem);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  border-radius: 2px;
+  pointer-events: auto;
+  word-wrap: break-word;
+  animation: emerge 1s ease-in-out;
+}
+
+@keyframes emerge {
+  from {
+    transform: scale(0);
+  } to {
+    transform: scale(1);
+  }
+}

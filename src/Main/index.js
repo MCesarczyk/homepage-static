@@ -1,4 +1,4 @@
-import { sections } from "../assets/content";
+import { sections } from "../assets/sections";
 import "./style.css";
 
 const Main = ({ openModal }) => (
@@ -14,7 +14,7 @@ const Main = ({ openModal }) => (
               `}
           onClick={() => openModal(section)}
         >
-          {section}
+          {section.name}
         </button>
       )}
     </div>
