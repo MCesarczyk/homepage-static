@@ -30,14 +30,21 @@
   background-color: #fafafa;
   position: relative;
   top: 4rem;
-  width: 720px;
-  max-width: calc(100vw - 2rem);
+  width: calc(100vw - 2rem);
+  max-width: 1400px;
   margin: 0 auto;
   margin-bottom: 4rem;
   border-radius: 2px;
   pointer-events: auto;
   word-wrap: break-word;
   animation: emerge 1s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .modal__body {
+    padding: 1rem;
+    max-width: calc(100vw - 1rem);
+  }
 }
 
 @keyframes emerge {
