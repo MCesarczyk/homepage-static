@@ -30,8 +30,8 @@
   background-color: #fafafa;
   position: relative;
   top: 4rem;
-  width: calc(100vw - 2rem);
-  max-width: 1400px;
+  width: calc(100vw - 4rem);
+  max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 4rem;
   border-radius: 2px;
