@@ -1,0 +1,98 @@
+.loader__iconWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.loader__icon {
+  width: 8rem;
+  height: 8rem;
+  background-image: url(../../assets/githubLogo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.octocat__eye {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid #000;
+  border-radius: 0.8rem;
+  background-color: #fafafa;
+  position: relative;
+  left: 3.2rem;
+  top: 2.9rem;
+  margin: 0;
+  transform: rotate(180deg);
+}
+
+.octocat__eye--left {
+  transform: translateX(-1.2rem);
+}
+
+.octocat__eye--right {
+  transform: translate(1.2rem, -1.6rem);
+}
+
+.octocat__eyeOfTheEye {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 0.3rem;
+  background-color: #000;
+  position: relative;
+  left: 0.45rem;
+  top: 0.45rem;
+  transform: translateX(0.45rem);
+  animation-duration: 1s;
+  animation-name: rollin;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.octocat__ballWrapper {
+  width: 100%;
+  margin-top: 4rem;
+  animation-duration: 1s;
+  animation-name: slide;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.octocat__ball {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: darkred;
+  margin-right: auto;
+}
+
+@keyframes rollin {
+  from {
+    transform: translate(-0.45rem, -0.225rem);
+  }
+
+  50% {
+    transform: translate(0, -0.45rem);
+  }
+
+  to {
+    transform: translate(0.45rem, -0.225rem);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(calc(50% - 1rem));
+  }
+
+  to {
+    transform: translateX(calc(100% - 2rem));
+  }
+}

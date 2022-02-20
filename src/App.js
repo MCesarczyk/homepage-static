@@ -1,31 +1,35 @@
-import './App.css';
-import Footer from './Footer';
+import { useState } from 'react';
 import Header from './Header';
+import Footer from './Footer';
+import Main from './Main';
+import Modal from './Modal';
+import './App.css';
 
 function App() {
+  const [content, setContent] = useState(undefined);
+  const [type, setType] = useState(undefined);
+  const [open, setOpen] = useState(false);
+
+  const showModal = (section) => {
+    setContent(section);
+    setType(section.previewType);
+    setOpen(true);
+  };
+
+  const onCancel = () => setOpen(false);
+
   return (
     <div className="App">
       <Header />
 
-      <main className='main'>
-        <h2>
-          Welcome to my homepage!
-        </h2>
-        <h3>
-          This website is under construction
-        </h3>
-        <p>
-          Below is my temporary homepage:
-        </p>
-        <a
-          className="App-link"
-          href="https://mcesarczyk.github.io/personal-homepage/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>MCesarczyk @ gh-pages</h2>
-        </a>
-      </main>
+      <Main openModal={showModal} />
+
+      <Modal
+        type={type}
+        visible={open}
+        content={content}
+        onCancel={onCancel}
+      />
 
       <Footer />
     </div >
