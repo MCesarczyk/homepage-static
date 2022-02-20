@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { fetchAPIData } from "./fetchAPIData";
 
-export const useGithubData = () => {
+export const useGithubReposData = () => {
   const [repos, setRepos] = useState({
     status: "loading",
-    repos: null
+    repos: []
   });
 
   const apiURL = 'https://api.github.com/users/MCesarczyk/repos?sort="updated"';
@@ -25,7 +25,7 @@ export const useGithubData = () => {
 
       } catch (error) {
         setRepos({ status: "error" });
-        console.log(error.message);
+        console.error(error.message);
       }
     };
 

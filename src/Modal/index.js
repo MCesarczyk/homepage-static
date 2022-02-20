@@ -19,7 +19,7 @@ const Modal = ({ type, visible, onCancel, content }) => {
     return () => {
       document.removeEventListener("mousedown", checkIfClickedOutside)
     }
-  }, [visible]);
+  }, [visible, onCancel]);
 
   return (
     <div data-testid="modal-root" className={`modal ${!visible ? 'hidden' : ''}`}>
