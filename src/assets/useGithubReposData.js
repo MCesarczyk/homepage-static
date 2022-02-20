@@ -7,6 +7,8 @@ export const useGithubReposData = () => {
     repos: []
   });
 
+  const DEMO_DELAY = 3_500;
+
   const apiURL = 'https://api.github.com/users/MCesarczyk/repos?sort="updated"';
 
   useEffect(() => {
@@ -29,7 +31,7 @@ export const useGithubReposData = () => {
       }
     };
 
-    setTimeout(getRepos, 2_000);
+    setTimeout(getRepos, DEMO_DELAY);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
