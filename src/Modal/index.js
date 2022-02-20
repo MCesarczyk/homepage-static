@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import ModalCloseButton from "./CloseButton";
+import Gallery from "./Gallery";
 import List from "./List";
 import "./style.css";
 
-const Modal = ({ visible, onCancel, content }) => {
+const Modal = ({ type, visible, onCancel, content }) => {
   const ref = useRef();
 
   useEffect(() => {
@@ -18,7 +19,7 @@ const Modal = ({ visible, onCancel, content }) => {
     return () => {
       document.removeEventListener("mousedown", checkIfClickedOutside)
     }
-  }, [visible]);
+  }, [visible, onCancel]);
 
   return (
     <div data-testid="modal-root" className={`modal ${!visible ? 'hidden' : ''}`}>
@@ -27,12 +28,15 @@ const Modal = ({ visible, onCancel, content }) => {
         <div data-testid="modal" ref={ref} className="modal__body" role="document">
           <ModalCloseButton onClick={onCancel} />
 
-          <h3 className="modal__header">
+          <h3 data-testid="modal-title" className="modal__header">
             {content?.title}
           </h3>
-          {content?.items && <List
+
+          {content?.items && type === "list" && <List
             items={content?.items}
           />}
+
+          {type === "gallery" && <Gallery />}
         </div>
       </div>
     </div>

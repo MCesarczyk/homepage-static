@@ -6,13 +6,13 @@ const List = ({ items }) => (
       {items?.map(item => (
         <li key={item.id} className="list__item" >
           {item.name}
-          <ul className="sublist">
-            {item.skills.map((skill, index) => (
+          {item?.details && <ul className="sublist">
+            {item.details.map((detail, index) => (
               <li key={index}>
-                {skill}
+                {detail}
               </li> 
             ))}
-          </ul>
+          </ul>}
         </li>
       ))}
     </ul>

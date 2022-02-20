@@ -7,10 +7,12 @@ import './App.css';
 
 function App() {
   const [content, setContent] = useState(undefined);
+  const [type, setType] = useState(undefined);
   const [open, setOpen] = useState(false);
 
   const showModal = (section) => {
     setContent(section);
+    setType(section.previewType);
     setOpen(true);
   };
 
@@ -23,6 +25,7 @@ function App() {
       <Main openModal={showModal} />
 
       <Modal
+        type={type}
         visible={open}
         content={content}
         onCancel={onCancel}
