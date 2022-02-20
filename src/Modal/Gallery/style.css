@@ -4,24 +4,29 @@
   border-radius: 4px;
   padding: 1rem;
   text-align: left;
+  background-color: #f0f0f0;
+  transition: all 0.6s ease-out;
 }
 
-.tile__header {
-  height: 4rem;
+.gallery__tile:hover {
+  background-color: #fafafa;
+  -webkit-box-shadow: 0px -1px 8px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px -1px 8px 0px rgba(66, 68, 90, 1);
+  box-shadow: 0px -1px 8px 0px rgba(66, 68, 90, 1);
+}
+
+.tile__space {
   display: flex;
   align-items: baseline;
-}
-
-.tile__header--extra {
-  height: 2.5rem;
 }
 
 .tile__link {
   display: flex;
   align-items: baseline;
   font-weight: 700;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
   transition: all 0.6s ease-out;
+  font-family: "Gloria Hallelujah", cursive;
 }
 
 .tile__link:hover {
@@ -41,7 +46,7 @@
 }
 
 .tile__paragraph {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
   line-height: 1.57;
   display: flex;
   align-items: baseline;

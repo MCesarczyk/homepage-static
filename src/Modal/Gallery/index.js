@@ -3,22 +3,21 @@ import { useGithubReposData } from "../../assets/useGithubReposData";
 
 const Gallery = () => {
   const { status, repos } = useGithubReposData();
+  const deployedRepos = repos.filter(({homepage}) => homepage?.length > 0);
 
   return (
     <>
-      {repos && repos.map(repo => (
+      {repos && deployedRepos.map(repo => (
         <div key={repo.id} className="gallery__tile">
-          <div className="tile__header">
+          <div className="tile__space">
             <span className="tile__label">
               Repository:
             </span>
             <a href={repo.html_url} target="_blank" rel="noreferrer noopener" className="tile__link">
-              <h3>
-                {repo.name}
-              </h3>
+              <h4>{repo.name}</h4>
             </a>
           </div>
-          <p className="tile__header tile__header--extra">
+          <p className="tile__space">
             <span className="tile__label">
               Demo:
             </span>
