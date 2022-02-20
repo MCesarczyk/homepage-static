@@ -1,13 +1,15 @@
 import "./style.css";
 import { useGithubReposData } from "../../assets/useGithubReposData";
+import Loader from "../Loader";
 
 const Gallery = () => {
   const { status, repos } = useGithubReposData();
-  const deployedRepos = repos.filter(({homepage}) => homepage?.length > 0);
+  const deployedRepos = repos.filter(({ homepage }) => homepage?.length > 0);
 
   return (
     <>
-      {repos && deployedRepos.map(repo => (
+      {status === "loading" && <Loader />}
+      {status === "success" && repos && deployedRepos.map(repo => (
         <div key={repo.id} className="gallery__tile">
           <div className="tile__space">
             <span className="tile__label">
