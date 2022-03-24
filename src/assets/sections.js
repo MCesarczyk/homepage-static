@@ -10,7 +10,7 @@ export const sections = [
         name: "Semantic & responsive web design",
         details: [
           "HTML",
-          "CSS3",
+          "CSS3, SCSS",
           "BEM convention",
           "CSS-Flexbox",
           "CSS-Grid"
@@ -39,10 +39,11 @@ export const sections = [
         id: 4,
         name: "React",
         details: [
-          "React hooks/custom Hooks",
+          "React hooks/custom hooks",
           "React-Redux/Redux-toolkit",
           "Redux-Saga",
-          "React Router"
+          "React Router",
+          "Testing: Jest/RTL"
         ]
       },
       {
@@ -51,17 +52,16 @@ export const sections = [
         details: [
           "Styled components",
           "Ant Design UI library",
-          "Material UI library",
-          "Bootstrap"
+          "Material UI library"
         ]
       },
       {
         id: 6,
-        name: "Building fulstack apps",
+        name: "Building fulstack apps (basics)",
         details: [
           "Ruby on Rails framework",
-          "PostgreSQL basics",
-          "Restful API",
+          "PostgreSQL",
+          "Building rest API",
           "packet managers: NVM, RVM, Gem bundler"
         ]
       },
@@ -71,8 +71,7 @@ export const sections = [
         details: [
           "Git/gh-pages",
           "Digitalocean",
-          "Nginx/Passenger",
-          "AWS S3 storage handling"
+          "Nginx reverse-proxy"
         ]
       },
       {
@@ -113,15 +112,17 @@ export const sections = [
         id: 1,
         name: "Things I'm currently learning",
         details: [
-          "Testing code: Jest/Enzyme",
-          "TypeScript"
+          "Node.js/Express",
+          "TypeScript",
+          "AWS S3 storage handling"
         ]
       },
       {
         id: 2,
         name: "Things I plan to learn subsequently",
         details: [
-          "Node.js",
+          "Cypress/Storybook",
+          "Mongo DB",
           "GraphQL",
           "Next.js"
         ]
