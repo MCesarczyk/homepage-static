@@ -7,7 +7,7 @@ export const useGithubReposData = () => {
     repos: []
   });
 
-  const DEMO_DELAY = 3_500;
+  const DEMO_DELAY = 2_500;
 
   const apiURL = 'https://api.github.com/users/MCesarczyk/repos?sort="updated"';
 
