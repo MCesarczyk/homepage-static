@@ -57,7 +57,7 @@ export const sections = [
       },
       {
         id: 6,
-        name: "Building fulstack apps (basics)",
+        name: "Building fullstack apps (basics)",
         details: [
           "Ruby on Rails framework",
           "PostgreSQL",
