@@ -57,8 +57,8 @@ exports[`thumbnails must render properly 3`] = `
   class="footer__thumbnail"
 >
   <a
-    data-testid="codepen-icon-test"
-    href="https://codepen.io/bikeoholic"
+    data-testid="upwork-icon-test"
+    href="https://www.upwork.com/freelancers/~01ec95abd3619f24c6"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -66,7 +66,7 @@ exports[`thumbnails must render properly 3`] = `
       class="footer__icon"
     >
       <svg>
-        codepenThumbnail.svg
+        upworkThumbnail.svg
       </svg>
     </div>
   </a>

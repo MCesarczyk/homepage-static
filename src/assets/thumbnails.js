@@ -1,11 +1,11 @@
 import { ReactComponent as GithubThumbnail } from "./githubThumbnail.svg";
 import { ReactComponent as LinkedinThumbnail } from "./linkedinThumbnail.svg";
-import { ReactComponent as CodepenThumbnail } from "./codepenThumbnail.svg";
+import { ReactComponent as UpworkThumbnail } from "./upworkThumbnail.svg";
 
 import {
     GITHUB_ADRESS,
     LINKEDIN_ADRESS,
-    CODEPEN_ADRESS,
+    UPWORK_ADRESS,
 } from "./adresses";
 
 export const thumbnails = [
@@ -23,8 +23,8 @@ export const thumbnails = [
     },
     {
         id: 3,
-        testId: "codepen-icon-test",
-        icon: <CodepenThumbnail />,
-        url: CODEPEN_ADRESS,
+        testId: "upwork-icon-test",
+        icon: <UpworkThumbnail />,
+        url: UPWORK_ADRESS,
     },
 ];
