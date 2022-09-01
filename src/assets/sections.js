@@ -39,11 +39,13 @@ export const sections = [
         id: 4,
         name: "React",
         details: [
+          "Typescript",
           "React hooks/custom hooks",
           "React-Redux/Redux-toolkit",
           "Redux-Saga",
           "React Router",
-          "Testing: Jest/RTL"
+          "Testing: Jest/RTL",
+          "CRA/Next.js"
         ]
       },
       {
@@ -59,6 +61,7 @@ export const sections = [
         id: 6,
         name: "Building fullstack apps (basics)",
         details: [
+          "Node.js/Express",
           "Ruby on Rails framework",
           "PostgreSQL",
           "Building rest API",
@@ -67,11 +70,13 @@ export const sections = [
       },
       {
         id: 7,
-        name: "Deploying apps",
+        name: "DevOps",
         details: [
           "Git/gh-pages",
           "Digitalocean",
-          "Nginx reverse-proxy"
+          "Nginx reverse-proxy",
+          "AWS S3 storage handling",
+          "Azure DevOps CI/CD pipelines"
         ]
       },
       {
@@ -112,19 +117,19 @@ export const sections = [
         id: 1,
         name: "Things I'm currently learning",
         details: [
-          "Node.js/Express",
-          "TypeScript",
-          "AWS S3 storage handling"
+          "Docker",
+          "Azure DevOps",
+          "Python/Django"
         ]
       },
       {
         id: 2,
-        name: "Things I plan to learn subsequently",
+        name: "Things I plan to learn next",
         details: [
           "Cypress/Storybook",
           "Mongo DB",
           "GraphQL",
-          "Next.js"
+          "React Native"
         ]
       }
     ]
